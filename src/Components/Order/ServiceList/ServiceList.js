@@ -18,7 +18,7 @@ const ServiceList = () => {
         fetch('https://nameless-shelf-27185.herokuapp.com/orders?email='+loggedInUser.email)
         .then(res=> res.json())
         .then(data =>setOrders(data))
-    },[loggedInUser.email])
+    },[])
     
     return (
         <div className="container-fluid">
