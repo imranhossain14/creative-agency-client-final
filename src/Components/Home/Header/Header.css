@@ -1,0 +1,33 @@
+
+  @media screen and (max-width: 992px) {
+    header {
+      position: relative;
+      height: 800px;
+      
+    }
+  }
+
+.special-bg{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    left: 0px;
+    top: -8.53px;
+    padding: 40px;
+    background: #FBD062;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+.special-bg:after{
+    content: '';
+    background-color: #fff;
+    display: block;
+    width: 110%;
+    height: 100px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    bottom: -47px;
+    transform: rotate(-4deg);
+}

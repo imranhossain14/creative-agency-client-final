@@ -1,0 +1,9 @@
+.animation-card {
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    border: 10px solid white;
+}
+
+.animation-card:hover{
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}
