@@ -32,7 +32,7 @@ const textStyle ={
 const CompanyPortfolios = () => {
     return (
         
-            <div className="" style={backgroundColor}>
+            <div className="" style={backgroundColor} id='portfolio' >
                 <h3 className="text-center text-white pt-5 pb-5">Here are some of <span style={textStyle }>our works</span></h3>
                <Carousel className ="w-50 d-block m-auto pb-5">
 

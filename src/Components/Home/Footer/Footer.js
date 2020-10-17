@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css'
 const Footer = () => {
     return (
-        <div className="mt-5 contactForm footer" >
+        <div className="mt-5 contactForm footer"  id='footer'>
             <div className="row pt-5 " >
                     <div className="col-md-6 text-left ml-5 pl-5 mt-5" style={{maxWidth:"500px"}}>
                             <h1> <strong>Let us handle your project, professionally.</strong> </h1>
