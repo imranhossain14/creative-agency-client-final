@@ -14,7 +14,7 @@ const Order = () => {
     let { name } = useParams();
     const [isAdmin,setIsAdmin]=useState(false);
     useEffect(()=>{
-        fetch('http://localhost:5000/isAdmin',{
+        fetch('https://nameless-shelf-27185.herokuapp.com//isAdmin',{
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify({email: loggedInUser.email})
@@ -51,7 +51,7 @@ const Order = () => {
         formData.append('email',info.email)
         formData.append('projectName',info.projectName)
         formData.append('projectDetails',info.projectDetails)
-        fetch('http://localhost:5000/addOrder', {   
+        fetch('https://nameless-shelf-27185.herokuapp.com//addOrder', {   
             method: 'POST',
             body: formData
         })

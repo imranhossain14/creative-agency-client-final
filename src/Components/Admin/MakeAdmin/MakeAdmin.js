@@ -9,7 +9,7 @@ const MakeAdmin = () => {
     const[loggedInUser , setLoggedInUser]= useContext(UserContext);
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-            fetch('http://localhost:5000/addAdmin',{
+            fetch('https://nameless-shelf-27185.herokuapp.com/addAdmin',{
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(data)

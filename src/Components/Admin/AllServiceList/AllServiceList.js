@@ -8,7 +8,7 @@ const AllServiceList = () => {
     const[loggedInUser , setLoggedInUser]= useContext(UserContext);
     const [services,setServices] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/allOrders')
+        fetch('https://nameless-shelf-27185.herokuapp.com/allOrders')
         .then(res=> res.json())
         .then(data =>setServices(data))
     },[])

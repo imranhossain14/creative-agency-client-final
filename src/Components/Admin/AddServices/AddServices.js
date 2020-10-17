@@ -4,6 +4,10 @@ import { UserContext } from '../../../App';
 import logo from "../../../images/logos/logo.png";
 import Sidebar from '../Sidebar/Sidebar';
 import './AddService.css'
+import { IconButton } from '@material-ui/core';
+import BackupIcon from '@material-ui/icons/Backup';
+
+
 const AddServices = () => {
     const[loggedInUser , setLoggedInUser]= useContext(UserContext);
     
@@ -27,7 +31,7 @@ const AddServices = () => {
         formData.append('serviceTitle',info.serviceTitle)
         formData.append('description',info.description)
         formData.append('serviceName',info.serviceName)
-        fetch('http://localhost:5000/addService', {   
+        fetch('https://nameless-shelf-27185.herokuapp.com/addService', {   
             method: 'POST',
             body: formData
         })
@@ -74,7 +78,8 @@ const AddServices = () => {
                                 <div className="col">
                                 <input type="file" onChange={handleFileChange} id="file" className="inputfile"  />
                                     <label htmlFor="file" ><h6>
-                                      Upload <img src="https://www.flaticon.com/svg/static/icons/svg/25/25399.svg" style={{width:"30px"}} alt=""/>
+                                    <IconButton><BackupIcon />  </IconButton>
+                                      Upload Image
                                         </h6></label>
                                 </div>
                             </div>
